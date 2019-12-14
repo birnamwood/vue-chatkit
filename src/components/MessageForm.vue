@@ -1,7 +1,7 @@
 <template>
   <div class="message-form ld-over">
     <small class="text-muted">@{{ user.username }}</small>
-    <b-from @submit.prevent="onSubmit" class="ld-over" v-bind:class="{ running: sending }">
+    <b-form @submit.prevent="onSubmit" class="ld-over" v-bind:class="{ running: sending }">
       <div class="ld ld-ring ld-span"></div>
       <b-alert variant="danger" :show="hasError">{{ error }} </b-alert>
       <b-form-group>
@@ -18,7 +18,7 @@
           Send
         </b-button>
       </div>
-    </b-from>
+    </b-form>
   </div>
 </template>
 

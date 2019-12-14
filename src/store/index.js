@@ -17,7 +17,7 @@ export default new Vuex.Store({
     loading: false,
     sending: false,
     error: null,
-    user: [],
+    user: null,
     reconnect: false,
     activeRoom: null,
     rooms: [],
@@ -28,7 +28,7 @@ export default new Vuex.Store({
   mutations,
   actions,
   getters: {
-    hasError: state => state.error ? true : false
+    hasError: state => !!state.error
   },
   plugins: [vuexLocal.plugin],
   strict: debug
