@@ -17,9 +17,9 @@ export default {
   name: 'ChatNavbar',
   computed: {
     ...mapState([
-      'user',
+      'user'
     ])
-  },
+  }
 }
 </script>
 
