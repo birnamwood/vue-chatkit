@@ -4,7 +4,7 @@
       Vue chat
     </b-navbar-brand>
     <b-navbar-nav class="ml-auto">
-      <b-navbar-text>{{ user.name }} | </b-navbar-text>
+      <b-nav-text>{{ user.name }} | </b-nav-text>
       <b-nav-item href="#" active>Logout</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
