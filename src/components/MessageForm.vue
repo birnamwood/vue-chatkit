@@ -49,7 +49,7 @@ export default {
     ...mapActions([
       'sendMessage'
     ]),
-    async onsubmit () {
+    async onSubmit () {
       const result = await this.sendMessage(this.message)
       if (result) {
         this.message = ''
